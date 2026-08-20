@@ -2,8 +2,13 @@ import torch
 from transformers import pipeline
 from PIL import Image
 import os
+from huggingface_hub import login
 import tqdm
 import json
+
+read_token = 'YOUR HF READ TOKEN HERE'  # Update this to the relevant read access token for your HF account. This is required to download the Gemma model.
+login(token=read_token)
+
 
 pipe = pipeline(
     "image-text-to-text",
