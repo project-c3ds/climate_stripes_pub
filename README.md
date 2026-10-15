@@ -9,8 +9,8 @@ This repository contains publishable dataset information and analysis code to de
 
 - `.env.example` is an example .env file illustrating the fields expected to be included.
 
-- `annotate_images.py` details the image annotation process. It includes details for both the annotation prompt and the VLM used.
+- `analyse_gemma4_annotations.py` runs all investigations on the VLM annotations of the images. This script includes details of the expert-assigned merging of VLM labels.
 
-- `gemma_identify_stripes.py` reads all images and passes them through the first step filter to find evidence of potential presence of the Climate Stripes. It uses a simple prompt for a binary classification via the `gemma-3-12b-it` instance hosted on HuggingFace.
+- `annotate_images.py` details the image annotation process. It includes details for both the annotation prompt and the VLM used.
 
 - `survey_analysis.py` reads the survey data and runs the statistical analyses on the responses and topic modelling on the survey responses.
