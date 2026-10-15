@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Parameters.
-annotation_data = 'all_stripes_annotations.jsonl'
+annotation_data = 'data/all_stripes_annotations.jsonl'
 
 # Load the annotations dataset.
 annotation_data = pd.read_json(annotation_data,lines=True)
